@@ -243,3 +243,17 @@
 }
 
 
+/* breadcrumb */
+.breadcrumb-contain{
+    font-size: 16px;
+ 
+}
+.breadcrumb-contain a{
+    color: #444;
+}
+.breadcrumb-contain .breadcrumb{
+    background-color: #F5F5F5;
+    margin: 0;
+    padding-left: 60px;
+}
+/* /breadcrumb */
