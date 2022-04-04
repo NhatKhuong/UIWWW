@@ -137,7 +137,7 @@
     transition: 0.25s;
 }
 
-.display__item__itemList__item_result{
+.display__item__itemList__item_result {
     margin-top: 20px;
 }
 
@@ -156,8 +156,9 @@
     margin-bottom: 25px;
     height: 320px;
     box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
-
+    position: relative;
 }
+
 
 /* .card_item :hover .btn_add-to-card {
     display: block;
@@ -176,12 +177,11 @@
 }
 
 .btn_add-to-card {
-    border: 1px solid;
     width: 80%;
     text-align: center;
     height: 35px;
     line-height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     background-color: #000;
     visibility: hidden;
@@ -189,18 +189,68 @@
     bottom: -15px;
     transition: 0.3s all;
     cursor: pointer;
+    opacity: 0;
+}
+
+.btn_add-to-card:hover{
+    background-color: #BA933E;
 }
 .card_item:hover .btn_add-to-card {
     visibility: visible;
     bottom: -8px;
-   
+    opacity: 1;
+    
 }
 
-.card_item:hover{
+.card_item_action {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_item_action > a {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    opacity: 0;
+    /* border: 1px solid #ccc; */
+    margin-bottom: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.card_item_action > a > i {
+    /* color: rgb(75, 72, 72); */
+    /* text-align: center;
+    height: 100%;
+    width: 100%; */
+}
+
+.card_item_action > a:hover {
+    background-color: #BA933E;
+}
+
+.card_icon {
+    color: rgb(75, 72, 72);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.card_item_action > a:hover .card_icon {
+    color: #fff;
+
+}
+
+.card_item:hover {
     opacity: 0.9;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.3s;
+}
 
+.card_item:hover .card_item_action > a {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .item_info {
@@ -220,25 +270,43 @@
     color: #ee4d2d;
 }
 
-.footer{
-    background-color: #1A1A1A;
+/* pagination */
+
+.pagination_block{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination >li{
+    margin: 0 10px;
+    width: 50px;
+    
+}
+
+
+.pagination >li>a{
+    display: block;
+    text-align: center;
+}
+
+.footer {
+    background-color: #1a1a1a;
     color: #fff;
     padding: 30px 50px 0;
 }
 
-.footer_bot{
+.footer_bot {
     border-top: 1px solid #333;
     align-items: center;
     padding: 20px 0;
-    
 }
 
-.footer_ul{
+.footer_ul {
     list-style: none;
     cursor: pointer;
 }
 
-.logo{
+.logo {
     margin-bottom: 10px;
 }
 
