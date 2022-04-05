@@ -313,6 +313,7 @@ html{
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* Feature Product */
 
 .rating::after{
@@ -413,3 +414,20 @@ html{
 }
 
 
+=======
+
+/* breadcrumb */
+.breadcrumb-contain{
+    font-size: 16px;
+ 
+}
+.breadcrumb-contain a{
+    color: #444;
+}
+.breadcrumb-contain .breadcrumb{
+    background-color: #F5F5F5;
+    margin: 0;
+    padding-left: 60px;
+}
+/* /breadcrumb */
+>>>>>>> 4e0bf533c7259329dc74017ebee755f7651ac113
